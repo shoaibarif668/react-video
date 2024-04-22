@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# React Video Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**`pnpm` is used as the package manager.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**This project is bootstrapped using `Vite`.**
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Available Scripts
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### `pnpm dev`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Runs the app in the development environment.
+
+## Libraries
+
+Some noticeable libraries being used:
+
+- [Video.js](https://videojs.com//)
+
+## File Structure
+
+The project has been broken down into a single `src` directory which consists of multiple subdirectories.
+
+- `assets`
+    - It includes all the local **images** used throughout the project.
+- `hooks`
+    - Functionalities which are extracted from components as react hooks, so that they can be easily re-used and maintained throughout the app.
+- `styles`
+    - This directory has the general styles for this application.
+- `utils`
+    - This directory contains the utilities for this application, as of now, it has two subdirectories:
+        - `constants`
+            - This directory contains the **constants** used throughout the project.
+        - `types`
+            - This directory contains all **types** which are used throughout the app.
+
