@@ -24,6 +24,7 @@ export default function useVideo() {
         })
     }
 
+    //Handling seeking on touch as well (specifically on smaller devices) because video.js clicks do not register on tap (mobile devices)
     function handleSeekingOnTouch(e: React.TouchEvent) {
         const windowWidth = window.innerWidth
         //Calling the touch event only on the mobile screens.
